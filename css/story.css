@@ -1,0 +1,61 @@
+
+
+
+.article_style, .byline{
+
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.article_style{
+	margin-top:7%;
+}
+
+.byline{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.byline h1{
+	font-size: 50px;
+	margin-bottom:-10px;
+	color:#a71930;
+	font-weight: bold;
+	margin-top:10%;
+}
+
+
+.firstline{
+	font-weight: bold;
+}
+
+.article_style h2::first-letter {
+  font-weight: bold;
+  color: red;
+  font-size: 70px;
+}
+
+.article_style h2{
+	margin-top:7%;
+	line-height: 30px;
+}
+
+.caption{
+	font-size: 8px;
+	font-style: italic;
+	margin-left:15%;
+}
+
+.picalign{
+	width:70%;
+	position: relative;
+	left:15%;
+}
+
+.admittedlydivider{
+	width:50%;
+	height:2px;
+	margin:50px auto;
+	margin-bottom:0;
+	border:2px solid gray;
+}

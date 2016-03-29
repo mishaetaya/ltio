@@ -1,0 +1,441 @@
+/*
+ * {
+  border: 1px solid black;
+}
+*/
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+  margin:0;
+  
+  font-family: 'Khula', sans-serif;
+/*  font-family: 'Special Elite', cursive;
+*/
+
+}
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/******************************************
+/* navigation bar
+/*******************************************/
+
+.header{
+  width:100%;
+/*  border: 1px solid black;*/  
+  height:50px;
+  background-color: #c4dff6;
+ /* position:fixed;
+  top:0;
+  z-index: +1;*/
+}
+
+
+#home_button{
+  margin-left:5%;
+  display: inline-block;
+  font-weight: bold;  
+  text-align: center;
+}
+
+
+.header p a{
+   text-decoration: none;  
+   color:#004b79;
+}
+
+.header #home_button:hover{
+  border-bottom: 2px solid #de0f17;
+ }
+
+.header ul{
+  display:inline-block;
+  float:right;
+  margin-right:2%;
+  width:50%;
+}
+
+.header ul li{
+  display:inline-block;
+  margin-right:7%;
+  text-align: center;
+  position:relative;
+  left: 20%;
+}
+
+.nav-button{
+  font-weight: bold;
+  color:#004b79;
+}
+
+.nav-button a{
+  text-decoration: none;  
+  color:#004b79;
+}
+
+.nav-button a:hover{
+  color:black;
+}
+
+.nav-button:hover{
+  border-bottom: 2px solid #de0f17;
+  font-style: italic;
+}
+
+
+/******************************************
+/* header (title and story nav tool)
+/*******************************************/
+
+.welcomeSection h1, .welcomeSection h2, .welcomeSection p{
+  text-align: center;
+  width:40%;
+  margin: 0 auto;
+}
+
+
+.welcomeSection h1{
+  text-transform: uppercase;
+   font-size: 40px; 
+   font-weight: bold;
+   margin-top:80px;
+}
+
+.welcomeSection h2{
+  font-size: 16px;
+  margin-top:20px;
+}
+
+.welcomeSection p{
+  margin-top:10px;  
+}
+
+.welcomeSection p a{
+  text-decoration: none;
+  color:gray;
+  font-family: 'Special Elite';
+}
+
+.welcomeSection p a:hover{
+  border-bottom:1px dashed blue;
+  font-weight: bolder;
+}
+
+.rollerdex{
+  margin: 5% auto;
+  width:90%;
+  border-bottom: 1px solid #e2dfe2;
+  border-top:1px solid #e2dfe2;
+}
+
+.rollerdex ul{
+  display: inline-block;
+  width:95%;
+  position:relative;
+  left:3%;
+}
+  
+.rollerdex ul li{
+  display: inline-block;
+  margin-right: 5%;
+/*  border:1px solid black;*/
+  width:28%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.rollerdex ul a{
+  text-decoration: none;
+  color:black;
+}
+.rollerdex ul li:hover{
+  background-color: black; /*#e2dfe2; #d7d7d8;*/
+  border:none;
+  color:white;
+  font-weight: bold;
+}
+
+.glyphicon-hand-right{
+  color:#6b0f24;
+  font-weight: bold;
+  font-size: 40px;
+  vertical-align: middle;
+  margin-left:1%;
+}
+
+#finger{
+  display: inline-block;
+  font-weight: bold;
+}
+
+/******************************************
+/* footer
+/*******************************************/
+footer{
+  margin-top:5%;
+/*  border:1px solid #E2DCDC;
+*/  text-align: center;
+}
+
+#contact{
+  display: inline-block;
+  padding-left:1%;
+  padding-right:1%;
+  font-size: 20px;
+}
+
+/******************************************
+/* story teaser / square
+/*******************************************/
+
+.wholeStory{
+  border:1px solid #E2DCDC;
+  width:42%;
+  height:340px;
+  margin-left: 5%;
+  display: inline-block;
+  padding-left:2%;
+  padding-right:2%;
+  margin-bottom:2%;
+  
+}
+.wholeStory h3{
+  font-size: 50px;
+  text-align: center;
+  height:100px;
+  margin-bottom:20%;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+
+.wholeStory p{
+  height:130px;
+  line-height: 20px;
+}
+
+.wholeStory p::first-letter {
+  font-weight: bold;
+  color: red;
+  font-size: 40px;
+}
+
+.storyTease{
+  text-decoration: none;
+  color:black;
+}
+
+.wholeStory:hover{
+  background-color: #c4dff6;
+  border: none;
+}
+
+
+.red-tooltip + .tooltip > .tooltip-inner {background-color: black;}
+
+/* phone screen =======================================*/
+@media screen and (min-device-width: 350px) and (max-device-width: 1100px) {
+
+/* * {
+  border: 1px solid black;
+}
+*/
+
+
+.header{
+  height:150px;
+}
+
+#home_button{
+  font-size: 3em;
+}
+
+.header ul{
+  margin-right:2%;
+  width:75%;
+  float:none;
+  position:relative;
+  left:5%;
+}
+
+.header ul li{
+  font-size: 3em;
+  margin-right:2%;
+  position:relative;
+  left:12%;
+}
+
+.header ul li:nth-child(2){
+  position: relative;
+  left:16%;
+}
+
+.header ul li:nth-child(4){
+  margin-left:22%;
+}
+
+.header ul li:nth-child(1), .header ul li:nth-child(3){
+  font-size: 0;
+}
+
+
+.rollerdex ul li{
+  font-size: 0;
+}
+
+.rollerdex{
+  border:none;
+  height:0;
+}
+
+.wholeStory{
+  border:1px solid #E2DCDC;
+  width:90%;
+  margin-left: 5%;
+  margin-right:5%;
+  height:800px;
+}
+
+.wholeStory h3{
+  font-size: 5em;
+  margin-bottom:20%;
+}
+
+.wholeStory p{
+  font-size: 3em;
+  line-height: 60px;
+}
+
+.wholeStory p::first-letter {
+  font-size: 90px;
+}
+
+.welcomeSection h1, .welcomeSection h2, .welcomeSection p{
+  width:95%;
+}
+.welcomeSection h1{
+   font-size: 80px; 
+}
+
+.welcomeSection h2{
+  font-size: 24px;
+}
+
+.welcomeSection p{
+ font-size: 16px;
+}
+
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 1100px) {
+
+
+
+.header{
+  height:150px;
+}
+
+#home_button{
+  font-size: 3em;
+}
+
+.header ul{
+  margin-right:2%;
+  width:70%;
+  float:none;
+  position:relative;
+  left:5%;
+}
+
+.header ul li{
+  font-size: 3em;
+  margin-right:2%;
+  position:relative;
+  left:12%;
+}
+
+.header ul li:nth-child(2){
+  position: relative;
+  left:16%;
+}
+
+.header ul li:nth-child(4){
+  margin-left:22%;
+}
+
+.header ul li:nth-child(1), .header ul li:nth-child(3){
+  font-size: 0;
+}
+
+.welcomeSection h1{
+   font-size: 80px; 
+   width:90%;
+}
+
+.welcomeSection h2{
+  font-size: 24px;
+  width:90%;
+}
+
+.welcomeSection p{
+ font-size: 16px;
+ width:90%;
+}
+
+.rollerdex ul li{
+  font-size: 0;
+}
+
+.rollerdex{
+  border:none;
+  height:0;
+}
+
+.wholeStory{
+  border:1px solid #E2DCDC;
+  width:90%;
+  margin-left: 5%;
+  margin-right:5%;
+  height:800px;
+}
+
+.wholeStory h3{
+  font-size: 5em;
+  margin-bottom:20%;
+}
+
+.wholeStory p{
+  font-size: 3em;
+  line-height: 60px;
+}
+
+.wholeStory p::first-letter {
+  font-size: 90px;
+}
+
+
+}
